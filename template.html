@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title><tmpl_var name=ImageName></title>
+		</head>
+		<body>
+				<div id="image-info">
+						Se han encontrado <tmpl_var name=ColorCount> colores.<br>
+				</div>
+				<div id="color-info">
+						<table id="color-table">
+								<tmpl_loop name=ColorTable>
+									<tr>
+										<td><tmpl_var name=ColorCode></td>
+									</tr>
+								</tmpl_loop>
+						</table>
+				</div>
+		</body>
+</html>
